@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive card details form</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <main>
+
+        <!-- page-container -->
+        <section class="page-container">
+
+            <!-- grid-container -->
+            <div class="grid-container">
+
+                <div class="grid-item">
+                    <img src="images/bg-main-desktop.png" alt="bg-main-desktop" class="image bg-main-desktop">
+                    <img src="images/bg-main-mobile.png" alt="bg-main-mobile" class="image bg-main-mobile">
+
+                    <div class="card-container">
+                        <img src="images/bg-card-front.png" alt="bg-card-front" class="image">
+
+                        <div class="card-desc">
+
+                            <img src="images/card-logo.svg" alt="logo">
+                            
+                            <div class="card-number">
+                                <p id="cardNumberOutput">0000 0000 0000 0000</p>
+                            </div>
+
+                            <div class="card-hero">
+                                <p id="cardNameOutput">Jane Appleseed</p>
+                                <p> <span id="expiryMonthOutput">00</span>/<span id="expiryYearOutput">00</span></p>
+                            </div>
+                        
+                        </div>
+
+                    </div>
+
+                    <div class="card-container">
+                        <img src="images/bg-card-back.png" alt="bg-card-front" class="image">
+
+                        <div class="card-desc">
+                            <p id="cvvOutput">000</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="grid-item">
+
+                    <div class="grid-content">
+
+                        <div class="confirmation-container hidden" id="confirmation-container">
+
+                            <div class="image-container">
+                                <img src="images/icon-complete.svg" alt="">
+                            </div>
+
+                            <h2>Thank you!</h2>
+
+                            <p>We've added your card details</p>
+
+                            <div class="button-container">
+                                <button type="button" id="close"><a href="#">Continue</a></button>
+                            </div>
+                        
+                        </div>
+                        
+                        <form action="#" id="myForm">
+
+                            <div class="input-container">
+                                <label for="#"><p>Cardholder Name</p></label><span></span>
+                                <span id="danger">
+                                <input type="text" placeholder="e.g. Jane Appleseed" name="cardHolder" maxlength="17" id="cardName">
+                                </span>
+                                <div id="cardNameError"></div>
+                            </div>
+
+                            <div class="input-container">
+                                <label for="#"><p>Card Number</p></label><span></span>
+                                <input type="text" placeholder="e.g. 1234 5678 9123 0000" name="cardNumber" id="cardNumber" maxlength="16" required>
+                                <div id="cardNumberError"></div>
+                            </div>
+
+                            <div class="input-container">
+
+                            <div class="input-container-content">
+                            <label for="#"><p>Exp. Date (MM/YY)</p></label><span></span>
+                                
+                            <div class="sub-input-container">
+                                <input type="text" placeholder="MM" name="cardNumber" id="expiryMonth" maxlength="2" required>
+                                <input type="text" placeholder="YY" name="cardNumber" id="expiryYear" maxlength="2" required>
+                            </div>
+
+                            </div>
+                            
+                            <div class="sub-input-container-two">
+                            <label for="#"><p>CVV</p></label><span></span>
+                            <input type="text" placeholder="e.g. 123" name="cvv" id="cvv" maxlength="4" required>
+                            </div>
+
+                            </div>
+
+                            <div class="flex-container">
+                            <div id="expiryMonthError"></div>
+                            <div id="expiryYearError"></div>
+                        </div>
+                            <div id="cvvError"></div>
+                        
+                            <div class="button-container">
+                                <button type="submit" id="submit"><a href="#">Confirm</a></button>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- grid-container End-->
+
+        </section>
+        <!-- page-container End-->
+
+    </main>
+    
+    <script defer src="./js/index.js"></script>
+</body>
+</html>
