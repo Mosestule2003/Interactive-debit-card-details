@@ -33,8 +33,8 @@ This is a solution to the [Interactive card details form solution on Frontend Me
 
 ### Links
 
-- Solution URL: https://github.com/Mosestule2003/interactive-card-details-form-main
-- Live Site URL: https://mosestule2003.github.io/interactive-card-details-form-main/
+- Solution URL: https://github.com/Mosestule2003/Interactive-debit-card-details
+- Live Site URL: https://mosestule2003.github.io/Interactive-debit-card-details/
 
 ## My process
 
