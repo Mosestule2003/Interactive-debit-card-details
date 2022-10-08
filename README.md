@@ -75,7 +75,7 @@ Solution;
 
 ### Useful resources
 
-- ![](https://www.stackoverflow.com) - This helped me to understand fully how position absolute works. I really liked this pattern and will use it going forward.
+- https://www.stackoverflow.com - This helped me to understand fully how position absolute works. I really liked this pattern and will use it going forward.
 
 ## Author
 
